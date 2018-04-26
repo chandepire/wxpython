@@ -14,7 +14,8 @@ class MyFrame(wx.Frame):
 		pos = event.GetPosition()
 		self.posCtrl.SetValue("%s, %s" % (pos.x, pos.y))
 
-if __name__="__main__":
-	app = wx.PySimpleApp()
+if __name__=="__main__":
+	app = wx.App()
 	frame = MyFrame()
 	frame.Show(True)
+	app.MainLoop()
